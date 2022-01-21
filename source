@@ -1,0 +1,118 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("LEGACYBEETLE HUB", "Ocean")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("soon")
+
+-- MAIN
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("Chest Teleport")
+
+
+Section:NewButton("Metal Plate", "Defense +10", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-156, 74, -48, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+Section:NewButton("Burning Torch", "+10% Inflict Burn, emitting light in dark areas", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(56, 66, -92, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Campfire Wood", "+10% Health, heals more at campfires", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(496, 42.0000153, -228, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Traveller Boots", "+10 Walk speed", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-208.000031, 74.0000153, -379.999969, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Sharpener Rock", "+15 Critical Chance", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164, 66, -528, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("Ignite Scroll", "Deals magic damage to the enemy and inflict burn, cost 50 mana, but if you got 250 mana or more it will cost 20% of your mana", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(342, 58, -1043.80005, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("Mining Pickaxe", "idk, im lazy", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(342, 58, -1043.80005, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("Hunting Dagger", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28, 34, -496, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("Sun Fragment", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-669.400024, 74, -1020.29999, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+Section:NewButton("Venom Scroll", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(507.899994, 50, -669.099976, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Icy Shield", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-340, 34, -797.199951, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Rage Scroll", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-60, 42, -195.300003, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+
+Section:NewButton("Beta Ticket", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(145, 42.0559349, -24.0999985, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("Punch", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(126.900009, 34.0000801, 123.900002, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("King's Crown", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1081.40002, 34, -1649.49988, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("Barrage", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(591.599976, 34, -1640.69995, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+
+Section:NewButton("Slime Jar", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(860.5, 42, -1147.69995, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+Section:NewButton("Slime Jar", "....", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(860.5, 42, -1147.69995, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+end)
+
+local Section = Tab:NewSection("Misc")
+
+Section:NewButton("ESP", "this might not be useful but i will just add it", function()
+while wait() do
+     pcall(function()
+       for i,v in pairs(game.Players:GetChildren()) do
+            if not v.Character.Head:FindFirstChild("ESP") then
+                local BillboardGui = Instance.new("BillboardGui")
+                local TextLabel = Instance.new("TextLabel")
+                BillboardGui.Parent = v.Character.Head
+                BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+                BillboardGui.Active = true
+                BillboardGui.Name = "ESP"
+                BillboardGui.AlwaysOnTop = true
+                BillboardGui.LightInfluence = 1.000
+                BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+                BillboardGui.StudsOffset = Vector3.new(0, 2.5, 0)
+                TextLabel.Parent = BillboardGui
+                TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                TextLabel.BackgroundTransparency = 1.000
+                TextLabel.Size = UDim2.new(0, 200, 0, 50)
+                TextLabel.Font = Enum.Font.SourceSansLight
+                TextLabel.Text = v.Name
+                TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+                TextLabel.TextScaled = true
+                TextLabel.TextSize = 5.000
+                TextLabel.TextStrokeTransparency = 1.000
+                TextLabel.TextWrapped = true
+            end
+        end
+    end) 
+end
+end)
+
